@@ -54,11 +54,10 @@ source dataset: [Kaggle Dataset Repository](https://www.kaggle.com/datasets/jaya
 - exam_score 			        : merupakan informasi mengenai nilai ujian                   
 
 Beberapa teknik EDA (Exploratory Data Analysis):
-- Distribusi Nilai Ujian: Menggunakan histogram untuk melihat sebaran skor.
+- Scatter Plot: untuk melihat hubungan antara beberapa fitur dengan fitur target (nilai ujian)
 - Korelasi Fitur: Heatmap korelasi untuk mengidentifikasi hubungan antar fitur dan target.
-- Visualisasi Boxplot: Untuk mengevaluasi pengaruh fitur kategorikal seperti penggunaan media sosial terhadap performa.
-- Scatter plot: Untuk mengamati hubungan langsung antara fitur numerik (seperti jam belajar) dengan nilai ujian akhir.
-- Visualisasi ini membantu mengidentifikasi outlier, pola distribusi, dan fitur-fitur yang memiliki potensi prediktif tinggi.
+- Pairplot: untuk melihat korelasi dan distribusi seluruh fitur dengan menggunakan scatter plot.
+- Bar Chart: untuk melihat jumlah data pada data kategorikal
 
 **Visualisasi Data**:
 ![Heatmap Correlation](image/heatmap_corr.png)
