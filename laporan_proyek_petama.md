@@ -61,7 +61,7 @@ Beberapa teknik EDA (Exploratory Data Analysis):
 - Visualisasi ini membantu mengidentifikasi outlier, pola distribusi, dan fitur-fitur yang memiliki potensi prediktif tinggi.
 
 **Visualisasi Data**:
-![Heatmap Correlation](C:\Users\62852\Pictures\heatmap_corr.png)
+![Heatmap Correlation](image/heatmap_corr.png)
 Korelasi di atas menunjukkan hubungan antara fitur-fitur baik hubungan positif, negatif, atau tidak terdapat hubungan sama sekali. Dari heatmap di atas terlihat dengan jelas dua fitur yang saling berkorelasi kuat di antara banyak fitur yaitu fitur yang menunjukkan lamanya durasi yang dihabiskan siswa untuk belajar dengan nilai ujian.
 
 ## Data Preparation
