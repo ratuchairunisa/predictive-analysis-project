@@ -86,6 +86,7 @@ Tujuannya adalah untuk melakukan standarisasi pada fitur numerik agar memiliki m
 Dalam tahap ini, dilakukan proses pemodelan Machine Learning untuk memprediksi nilai ujian akhir siswa berdasarkan fitur-fitur kebiasaan hidup mereka. Beberapa algoritma regresi yang digunakan antara lain:
 
 **a. Linear Regression (Baseline Model)**
+
 Tahapan:
 - Melatih model pada data latih.
 - Menggunakan semua fitur numerik dan kategorikal (setelah encoding).
@@ -99,6 +100,7 @@ Kekurangan:
 - Sensitif terhadap multikolinearitas dan outlier.
 
 **b. XGBoost Regressor (Model Improvement)**
+
 Tahapan:
 - Gradient boosting yang efisien untuk regresi dan klasifikasi.
 - Hyperparameter tuning menggunakan Grid Search.
