@@ -32,8 +32,8 @@ Model-model ini akan dievaluasi menggunakan metrik regresi yang terukur, seperti
 - R² Score
 
 ## Data Understanding
-Dataset ini terdiri dari 1.000 entri data siswa yang terdiri dari 16 fitur kebiasaan harian dan target berupa nilai ujian akhir 
-Source: [Kaggle Dataset Repository](https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance).
+Dataset ini terdiri dari 1.000 entri data siswa yang terdiri dari 16 fitur kebiasaan harian dan target berupa nilai ujian akhir. 
+source dataset: [Kaggle Dataset Repository](https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance).
 
 ### Variabel-variabel pada Students Habits vs Academic Performance kaggle dataset adalah sebagai berikut:
 - student_id    			    : merupakan ID unik yang berbeda-beda yang dimiliki setiap siswa
