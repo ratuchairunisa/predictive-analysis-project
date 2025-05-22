@@ -163,21 +163,27 @@ Artinya, Linear Regression lebih akurat dalam memprediksi nilai ujian akhir, dan
 ### Penjelasan Metrik Evaluasi yang Digunakan:
 #### **Mean Absolute Error (MAE)**
 * Formula:
+  
 $\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|$
+
 * Penjelasan:
 MAE menghitung rata-rata dari semua selisih absolut antara nilai aktual (y) dan nilai prediksi (ŷ). Metrik ini mudah diinterpretasikan karena memiliki satuan yang sama dengan target (nilai ujian).
 * Kelebihan: Tidak terlalu sensitif terhadap outlier.
 
 #### Root Mean Squared Error (RMSE)
 * Formula:
+
 $\text{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2 }$
+
 * Penjelasan:
 RMSE menghitung akar dari rata-rata kuadrat selisih antara nilai aktual dan prediksi. Karena mengkuadratkan kesalahan, RMSE lebih sensitif terhadap kesalahan besar/outlier dibanding MAE.
 * Kelebihan: Menekankan penalti lebih besar terhadap prediksi yang jauh meleset.
 
 #### R² Score (Koefisien Determinasi)
 * Formula:
+
 $R^2 = 1 - \frac{ \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 }{ \sum_{i=1}^{n} (y_i - \bar{y})^2 }$
+
 * Penjelasan:
 R² Score mengukur seberapa banyak variasi target (nilai ujian akhir) yang bisa dijelaskan oleh fitur-fitur input. Nilai R² berkisar antara 0 hingga 1:
 Semakin mendekati 1, semakin baik model menjelaskan data.
