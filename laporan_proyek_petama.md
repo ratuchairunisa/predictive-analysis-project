@@ -181,10 +181,8 @@ RMSE menghitung akar dari rata-rata kuadrat selisih antara nilai aktual dan pred
 
 #### R² Score (Koefisien Determinasi)
 * Formula:
-* 
-$$
-R^2 = 1 - \frac{ \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 }{ \sum_{i=1}^{n} (y_i - \bar{y})^2 }
-$$
+
+R² = 1 - (Σ(yᵢ - ŷᵢ)²) / (Σ(yᵢ - ȳ)²)
 
 * Penjelasan:
 R² Score mengukur seberapa banyak variasi target (nilai ujian akhir) yang bisa dijelaskan oleh fitur-fitur input. Nilai R² berkisar antara 0 hingga 1:
