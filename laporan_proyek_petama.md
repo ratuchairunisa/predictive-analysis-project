@@ -62,7 +62,8 @@ Beberapa teknik EDA (Exploratory Data Analysis):
 
 **Visualisasi Data**:
 ![Heatmap Correlation](image/heatmap_corr.png)
-Korelasi di atas menunjukkan hubungan antara fitur-fitur baik hubungan positif, negatif, atau tidak terdapat hubungan sama sekali. Dari heatmap di atas terlihat dengan jelas dua fitur yang saling berkorelasi kuat di antara banyak fitur yaitu fitur yang menunjukkan lamanya durasi yang dihabiskan siswa untuk belajar dengan nilai ujian.
+
+Heatmap korelasi di atas menunjukkan hubungan antara fitur-fitur baik hubungan positif, negatif, atau tidak terdapat hubungan sama sekali. Dari heatmap di atas terlihat dengan jelas dua fitur yang saling berkorelasi kuat di antara banyak fitur yaitu fitur yang menunjukkan lamanya durasi yang dihabiskan siswa untuk belajar dengan nilai ujian.
 
 ## Data Preparation
 Langkah-langkah data preparation yang dilakukan meliputi:
