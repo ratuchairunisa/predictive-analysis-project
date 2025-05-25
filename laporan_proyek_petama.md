@@ -37,8 +37,7 @@ Setelah dilakukan pengecekan kondisi awal dataset sebelum dilakukan pengolahan, 
 
 source dataset yang digunakan: [Kaggle Dataset Repository](https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance).
 
-* **Fitur-fitur pada Dataset Students Habits vs Academic Performance** 
-
+### **Fitur-fitur pada Dataset Students Habits vs Academic Performance** 
 - **student_id:** merupakan ID unik yang berbeda-beda yang dimiliki setiap siswa
 - **age:** merupakan umur siswa yang terdata
 - **gender:** merupakan gender siswa (female, male, others)
