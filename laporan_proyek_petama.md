@@ -8,8 +8,7 @@ Berdasarkan penelitian yang dilakukan oleh Aljaffer, Almadani, AlDughaither, dkk
 
 Masalah ini penting diselesaikan karena dengan mengetahui faktor-faktor gaya hidup yang paling memengaruhi performa akademik, institusi pendidikan dapat merancang intervensi yang lebih tepat sasaran untuk meningkatkan prestasi siswa.
 
-**Referensi**
-
+**Referensi:**
 Aljaffer, M.A., Almadani, A.H., AlDughaither, A.S. et al. _The impact of study habits and personal factors on the academic achievement performances of medical students_. BMC Med Educ 24, 888 (2024) [https://doi.org/10.1186/s12909-024-05889-y](https://doi.org/10.1186/s12909-024-05889-y)
 
 ## Business Understanding
