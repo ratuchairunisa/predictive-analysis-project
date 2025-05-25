@@ -79,19 +79,19 @@ source dataset yang digunakan: [Kaggle Dataset Repository](https://www.kaggle.co
 
 Berikut ini adalah langkah-langkah dan teknik dalam data preparation yang dilakukan:
 
-* **Mengatasi Data Hilang (*Missing Value*)**: missing value diatasi menggunakan teknik imputasi dengan modus (data yang sering muncul), penggunaan modus sebagai metodek pengisian dikarenakan fitur tersebut bertipe kategori. Ini penting dilakukan agar tidak terdapat data kosong yang dapat mempengaruhi pada saat pemodelan.
+**1. Mengatasi Data Hilang (*Missing Value*)**: missing value diatasi menggunakan teknik imputasi dengan modus (data yang sering muncul), penggunaan modus sebagai metodek pengisian dikarenakan fitur tersebut bertipe kategori. Ini penting dilakukan agar tidak terdapat data kosong yang dapat mempengaruhi pada saat pemodelan.
 
-* **Mengatasi Outliers**: outliers diatasi menggunakan teknik **IQR (interquartile Range)** dengan memfilter data yang terdapat dalam rentang IQR, ini dilakukan agar mengurangi bias dan noise, dan meningkatkan performa model.
+**2. Mengatasi Outliers**: outliers diatasi menggunakan teknik **IQR (interquartile Range)** dengan memfilter data yang terdapat dalam rentang IQR, ini dilakukan agar mengurangi bias dan noise, dan meningkatkan performa model.
 
-* **Menerapkan fitur target**: menetapkan fitur exam_score sebagai fitur target. Ini penting dilakukan agar memperjelas tujuan prediksi.
+**3. Menerapkan fitur target**: menetapkan fitur exam_score sebagai fitur target. Ini penting dilakukan agar memperjelas tujuan prediksi.
 
-* **Membagi Data (*Splitting Data*)**: membagi data dengan proporsi 80:20, yaitu 80% data yang digunakan selama training, dan 20% digunakan pada saat testing. 
+**4. Membagi Data (*Splitting Data*)**: membagi data dengan proporsi 80:20, yaitu 80% data yang digunakan selama training, dan 20% digunakan pada saat testing. 
   * **X_train, y_train**: digunakan untuk melatih model agar mengenali pola dari data.
   * **X_test, y_test**: digunakan untuk menguji model pada data yang belum pernah dilihat sebelumnya.
 
 Tahapan splitting data dilakukan untuk mencegah overfitting, melatih dan menguji model secara terpisah, menilai kemampuan model dalam memprediksi data baru.
 
-* **Feature Scaling (Melakukan Standarisasi & One Hot Encoding Sekaligus)**: 
+**5. Feature Scaling (Melakukan Standarisasi & One Hot Encoding Sekaligus)**: 
 
 * Melakukan standarisasi pada fitur-fitur numerik yang menghasilkan distribusi dengan mean 0 dan std 1.
 * Melakukan Scaling dengan teknik One-Hot Encoding, yaitu mengubah kategori dalam kolom-kolom kategori ke bentuk biner(0/1). Ini penting dilakukan agar mesin bisa membaca data dan membantu model mampu bekerja secara optimal.
@@ -145,27 +145,27 @@ Proses pemodelan melibatkan beberapa tahapan berikut:
 ### **Kelebihan dan Kekurangan XGBoost dan Regresi Linear**
 
 1. **Regresi Linear**
-* **Kelebihan:**
+**Kelebihan:**
 * Sederhana & Cepat: Mudah diimplementasikan dan dilatih, bahkan pada dataset besar. 
 * Mudah Diinterpretasikan: Koefisien model menunjukkan hubungan (kekuatan dan arah) antara setiap fitur dengan target. 
 * Baseline yang Baik: Sering digunakan sebagai titik awal untuk membandingkan model yang lebih kompleks.
 * Tidak Banyak Parameter: Tidak memerlukan tuning yang ekstensif (kecuali jika menggunakan regularisasi).
 
-* **Kekurangan:**
+**Kekurangan:**
 * Asumsi Linearitas: Mengasumsikan hubungan linear antara fitur dan target. Jika hubungannya kompleks/non-linear, performanya buruk.
 * Sensitif terhadap Pencilan (Outliers): Kesalahan besar dapat sangat memengaruhi garis regresi.
 * Multikolinearitas: Performa bisa menurun jika ada korelasi tinggi antar fitur independen.
 * Tidak Bisa Menangkap Interaksi Kompleks: Sulit menangkap hubungan rumit antar fitur secara otomatis.
 
 2. **XGBoost (Extreme Gradient Boosting)**
-* **Kelebihan:**
+**Kelebihan:**
 * Performa Tinggi: Seringkali memberikan hasil terbaik di berbagai kompetisi dan masalah tabular data. 
 * Menangani Non-Linearitas & Interaksi: Mampu menangkap hubungan yang kompleks antar fitur.
 * Fleksibel: Memiliki banyak parameter untuk tuning dan dapat dioptimalkan untuk berbagai fungsi objektif.
 * Regularisasi Internal: Memiliki mekanisme bawaan (L1 & L2) untuk mencegah overfitting.
 * Menangani Nilai Hilang: Bisa menangani nilai hilang secara internal (meskipun lebih baik ditangani di pra-pemrosesan).
 
-* **Kekurangan:**
+**Kekurangan:**
 * Kompleks & Sulit Diinterpretasikan: Lebih sulit dipahami cara kerjanya dibandingkan Regresi Linear.
 * Membutuhkan Tuning: Performa sangat bergantung pada hyperparameter tuning, yang bisa memakan waktu.
 * Rentan Overfitting: Jika tidak di-tune dengan benar (misalnya, pohon terlalu dalam), bisa overfit pada data latih.
@@ -201,7 +201,7 @@ Untuk mengukur dan membandingkan kinerja model Regresi Linear dan XGBoost dalam 
 
 ### Penjelasan Metrik Evaluasi yang Digunakan:
 
-#### **Mean Absolute Error (MAE)**
+#### **1. Mean Absolute Error (MAE)**
 * **Formula:**
   
 $\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|$
@@ -209,7 +209,7 @@ $\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|$
 * **Penjelasan:** MAE menghitung rata-rata dari semua selisih absolut antara nilai aktual (y) dan nilai prediksi (ŷ). Metrik ini mudah diinterpretasikan karena memiliki satuan yang sama dengan target (nilai ujian).
 * Kelebihan: Tidak terlalu sensitif terhadap outlier.
 
-#### Root Mean Squared Error (RMSE)
+#### **2. Root Mean Squared Error (RMSE)**
 * **Formula:**
 
 $\text{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2 }$
@@ -217,7 +217,7 @@ $\text{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^
 * **Penjelasan:** RMSE menghitung akar dari rata-rata kuadrat selisih antara nilai aktual dan prediksi. Karena mengkuadratkan kesalahan, RMSE lebih sensitif terhadap kesalahan besar/outlier dibanding MAE.
 * **Kelebihan:** Menekankan penalti lebih besar terhadap prediksi yang jauh meleset.
 
-#### R² Score (Koefisien Determinasi)
+#### **3. R² Score (Koefisien Determinasi)**
 * **Formula:**
 
 R² = 1 - (Σ(yᵢ - ŷᵢ)²) / (Σ(yᵢ - ȳ)²)
