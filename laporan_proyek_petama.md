@@ -60,13 +60,13 @@ source dataset yang digunakan: [Kaggle Dataset Repository](https://www.kaggle.co
 - **Histogram fitur numerik:** untuk melihat distribusi pada fitur-fitur numerik 
 ![Histogram Fitur-Fitur Numerik](image/hist_bfore_normalized.png)
 
-- **Scatter Plot - "Jam Belajar" vs "Nilai Ujian":** untuk melihat hubungan antara fitur study_hours_per_day dengan fitur target (exam_score)
+- **Scatter Plot - "Jam Belajar" vs "Nilai Ujian":** untuk melihat hubungan antara fitur study_hours_per_day dengan fitur target (exam_score). Scatter plot menunjukkan hubungan korelasi yang kuat antara variabel durasi jam belajar dalam sehari dengan nilai ujian yang diperoleh.
 ![Scatter Plot – "Jam Belajar" vs "Nilai Ujian"](image/scatter_plot1.png)
 
-- **Scatter Plot– "Jam Tidur" vs "Nilai Ujian":** untuk melihat hubungan antara fitur sleep_hours dengan fitur target (exam_score)
+- **Scatter Plot– "Jam Tidur" vs "Nilai Ujian":** untuk melihat hubungan antara fitur sleep_hours dengan fitur target (exam_score). Scatter plot menunjukkan hubungan yang positif pada variabel durasi jam tidur dengan nilai ujian, namun plot tersebut tidak menunjukkan hubungan yang tidak begitu kuat ditandai dengan plot yang menyebar.
 ![Scatter Plot – "Jam Tidur" vs "Nilai Ujian"](image/scatter_plot2.png)
 
-- **Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian":** untuk melihat hubungan antara fitur social_media_hours dengan fitur target (exam_score)
+- **Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian":** untuk melihat hubungan antara fitur social_media_hours dengan fitur target (exam_score). Ada tren negatif antara waktu penggunaan media sosial dan nilai ujian. Namun, karena sebaran data cukup luas, kemungkinan faktor lain juga berpengaruh terhadap nilai ujian.
 ![Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian""](image/scatter_plot3.png)
 
 - **Korelasi Fitur:** Heatmap korelasi untuk mengidentifikasi hubungan antar fitur numerik dengan target.
