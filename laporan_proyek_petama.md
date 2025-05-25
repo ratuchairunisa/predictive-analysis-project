@@ -58,22 +58,22 @@ source dataset yang digunakan: [Kaggle Dataset Repository](https://www.kaggle.co
 ### EDA (Exploratory Data Analysis)
 
 - **Histogram fitur numerik:** untuk melihat distribusi pada fitur-fitur numerik 
-![Histogram Fitur-Fitur Numerik](hist_bfore_normalized.png)
+![Histogram Fitur-Fitur Numerik](image/hist_bfore_normalized.png)
 
 - **Scatter Plot - "Jam Belajar" vs "Nilai Ujian":** untuk melihat hubungan antara fitur study_hours_per_day dengan fitur target (exam_score)
-![Scatter Plot – "Jam Belajar" vs "Nilai Ujian"](scatter_plot1.png)
+![Scatter Plot – "Jam Belajar" vs "Nilai Ujian"](image/scatter_plot1.png)
 
 - **Scatter Plot– "Jam Tidur" vs "Nilai Ujian":** untuk melihat hubungan antara fitur sleep_hours dengan fitur target (exam_score)
-![Scatter Plot – "Jam Tidur" vs "Nilai Ujian"](scatter_plot2.png)
+![Scatter Plot – "Jam Tidur" vs "Nilai Ujian"](image/scatter_plot2.png)
 
 - **Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian":** untuk melihat hubungan antara fitur social_media_hours dengan fitur target (exam_score)
-![Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian""](scatter_plot3.png)
+![Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian""](image/scatter_plot3.png)
 
 - **Korelasi Fitur:** Heatmap korelasi untuk mengidentifikasi hubungan antar fitur numerik dengan target.
-![Heatmap Correlation](heatmap_corr.png)
+![Heatmap Correlation](image/heatmap_corr.png)
 
 - **Bar Chart Data Kategorikal:** untuk memvisualisasikan jumlah data pada fitur-fitur kategorik.
-![Distribusi Jumlah Data Fitur Kategorik](bar_categorical_features.png)
+![Distribusi Jumlah Data Fitur Kategorik](image/bar_categorical_features.png)
 
 ## Data Preparation
 
@@ -122,8 +122,7 @@ Proses pemodelan melibatkan beberapa tahapan berikut:
 2. Pemilihan model yang melibatkan model:
 
  * **Regresi Linear**: Sebagai baseline, dan dilatih dengan parameter default.
-    * fit_intercept=True: Ini berarti model akan menghitung β 
-0 (nilai ujian dasar ketika semua fitur lain bernilai nol). Ini penting untuk mendapatkan baseline prediksi yang benar.
+    * fit_intercept=True: Ini berarti model akan menghitung β0 (nilai ujian dasar ketika semua fitur lain bernilai nol). Ini penting untuk mendapatkan baseline prediksi yang benar.
 
   * **XGBoost Regressor**: Sebagai model yang lebih canggih. 
   Parameter-parameter yang digunakan dalam algoritma ini:
