@@ -58,22 +58,23 @@ source dataset yang digunakan: [Kaggle Dataset Repository](https://www.kaggle.co
 ### EDA (Exploratory Data Analysis)
 
 - **Histogram fitur numerik:** untuk melihat distribusi pada fitur-fitur numerik 
-![Histogram Fitur-Fitur Numerik](image/hist_bfore_normalized.png)
+![hist_bfore_normalized](https://github.com/user-attachments/assets/f759a954-8d85-499d-9332-925a47f63247)
+
 
 - **Scatter Plot - "Jam Belajar" vs "Nilai Ujian":** untuk melihat hubungan antara fitur study_hours_per_day dengan fitur target (exam_score). Scatter plot menunjukkan hubungan korelasi yang kuat antara variabel durasi jam belajar dalam sehari dengan nilai ujian yang diperoleh.
-![Scatter Plot – "Jam Belajar" vs "Nilai Ujian"](image/scatter_plot1.png)
+![scatter_plot1](https://github.com/user-attachments/assets/e56ab5cd-3d17-4815-a460-ec47a30ab53e)
 
 - **Scatter Plot– "Jam Tidur" vs "Nilai Ujian":** untuk melihat hubungan antara fitur sleep_hours dengan fitur target (exam_score). Scatter plot menunjukkan hubungan yang positif pada variabel durasi jam tidur dengan nilai ujian, namun plot tersebut tidak menunjukkan hubungan yang tidak begitu kuat ditandai dengan plot yang menyebar.
-![Scatter Plot – "Jam Tidur" vs "Nilai Ujian"](image/scatter_plot2.png)
+![scatter_plot2](https://github.com/user-attachments/assets/1e0b4544-9db1-4c56-9272-786d048ae228)
 
 - **Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian":** untuk melihat hubungan antara fitur social_media_hours dengan fitur target (exam_score). Ada tren negatif antara waktu penggunaan media sosial dan nilai ujian. Namun, karena sebaran data cukup luas, kemungkinan faktor lain juga berpengaruh terhadap nilai ujian.
-![Scatter/Reg Plot – "Media Sosial" vs "Nilai Ujian""](image/scatter_plot3.png)
+![scatter_plot3](https://github.com/user-attachments/assets/646bf089-a4f6-450f-9d9c-b8e2d12fd501)
 
 - **Korelasi Fitur:** Heatmap korelasi untuk mengidentifikasi hubungan antar fitur numerik dengan target.
-![Heatmap Correlation](image/heatmap_corr.png)
+![heatmap_corr](https://github.com/user-attachments/assets/d4b03783-91a3-4f9b-9238-2016f7f525c6)
 
 - **Bar Chart Data Kategorikal:** untuk memvisualisasikan jumlah data pada fitur-fitur kategorik.
-![Distribusi Jumlah Data Fitur Kategorik](image/bar_categorical_features.png)
+![bar_categorical_features](https://github.com/user-attachments/assets/bd038a49-7072-4f2a-85c3-dad807def3c4)
 
 ## Data Preparation
 
